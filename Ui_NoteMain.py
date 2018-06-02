@@ -45,7 +45,7 @@ class Ui_NoteMain(object):
         self.saveBtn.setText(_translate("NoteMain", "生成"))
         self.pushButton_2.setText(_translate("NoteMain", "退出"))
 
-import note_qrc
+import note_rc
 
 if __name__ == "__main__":
     import sys
