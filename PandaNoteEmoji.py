@@ -18,6 +18,7 @@ class Panda_Note_Emoji:
         self.font=ImageFont.truetype('./images/xiaowanzi.ttf', 12)
         return img
     
+    #图片生成算法(不完善，有漏洞，如果是汉字还行，有英文字符会捉襟见肘)
     def __get_note_img(self,str):
         lenContent=len(str) #日记字数
          #第一行是有空格，只能输入21个汉子

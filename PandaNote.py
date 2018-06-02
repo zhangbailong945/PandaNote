@@ -7,8 +7,10 @@ class Do_NoteMain(QWidget, Ui_NoteMain):
     def __init__(self, parent=None):
         super(Do_NoteMain, self).__init__(parent)
         self.setupUi(self)
+        self.noteText.setPlainText("2018年6月2日,多云，室内凉爽，睡到自然醒，美滋滋。但是拨开窗帘一看，外面热得不行。顿时打消出去游玩的念头，还是继续宅吧。冲杯咖啡，打开群。看看有没有老司机看车。发现没一个人开车。emmmm,这个仇今天记下了！")
         self.saveBtn.clicked.connect(self.saveImage)
     
+    #生成按钮槽函数
     def saveImage(self):
         note_Content=self.noteText.toPlainText()
         if(len(note_Content)>10):
